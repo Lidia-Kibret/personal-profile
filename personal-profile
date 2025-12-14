@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Personal Profile</title>
+
+  <style>
+    body {
+      font-family: 'Verdana', sans-serif;
+      background: linear-gradient(to right, #ffe6e6, #e6f7ff);
+      margin: 0;
+      padding: 0;
+    }
+    .profile-card {
+      width: 80%;
+      max-width: 500px;
+      background: #ffffffaa;
+      margin: 50px auto;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2em;
+      color: #ff4d4d;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      display: grid;
+      gap: 10px;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff4d4d;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <h1>🌟 Lidia Kibret 🌟</h1>
+
+    <p>Hey, I am Lidia Kibret. I am a second-year student in the School of Electrical and Computing Engineering at Adama Science and Technology University (ASTU). I am passionate about technology and enjoy learning new skills, working on projects, and improving my problem-solving abilities. I am motivated to grow academically and prepare myself for future career opportunities.</p>
+
+    <!-- Contact Form remains, image removed -->
+    <form onsubmit="submitForm(event)">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+      <label for="emailaddr">Email Address</label>
+      <input type="email" id="emailaddr" name="emailaddr" placeholder="Enter your email" required />
+
+      <label for="msg">Your Message</label>
+      <textarea id="msg" name="msg" rows="4" placeholder="Write something..." required></textarea>
+
+      <button type="submit">Send Message ✉️</button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert('Your message has been sent successfully! 🚀');
+    }
+  </script>
+
+</body>
+</html>
